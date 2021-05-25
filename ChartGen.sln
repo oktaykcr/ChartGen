@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartGen", "ChartGen\ChartGen.csproj", "{833A54DF-71F5-43F9-A8AF-3143F7986098}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ChartGenSetup", "ChartGenSetup\ChartGenSetup.vdproj", "{B9D3EEE8-0AA8-493C-B843-1FA2486532B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{833A54DF-71F5-43F9-A8AF-3143F7986098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833A54DF-71F5-43F9-A8AF-3143F7986098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833A54DF-71F5-43F9-A8AF-3143F7986098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833A54DF-71F5-43F9-A8AF-3143F7986098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D3EEE8-0AA8-493C-B843-1FA2486532B4}.Debug|Any CPU.ActiveCfg = Debug
+		{B9D3EEE8-0AA8-493C-B843-1FA2486532B4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {612721E9-8626-464E-8A2B-B4523FA3000D}
+	EndGlobalSection
+EndGlobal
