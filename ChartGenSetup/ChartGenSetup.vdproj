@@ -15,26 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_179B964445820125F3DBE8AD9BD456B5"
-        "OwnerKey" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_179B964445820125F3DBE8AD9BD456B5"
-        "OwnerKey" = "8:_E32A44BEB8811270A11C1E3A4912BA58"
+        "MsmKey" = "8:_00BAF1F316D649598D23520B5822547D"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_1D0B044BE1D403C242279B754D4BEC76"
-        "OwnerKey" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
+        "OwnerKey" = "8:_00BAF1F316D649598D23520B5822547D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_50BDF3121F5EB6D4A225AAC1489DAA8F"
+        "OwnerKey" = "8:_00BAF1F316D649598D23520B5822547D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_50BDF3121F5EB6D4A225AAC1489DAA8F"
+        "OwnerKey" = "8:_8A0D3CFC76E9614F0DA504BDF017F140"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,32 +45,32 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_E32A44BEB8811270A11C1E3A4912BA58"
-        "OwnerKey" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E32A44BEB8811270A11C1E3A4912BA58"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_179B964445820125F3DBE8AD9BD456B5"
+        "MsmKey" = "8:_8A0D3CFC76E9614F0DA504BDF017F140"
+        "OwnerKey" = "8:_00BAF1F316D649598D23520B5822547D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1D0B044BE1D403C242279B754D4BEC76"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_00BAF1F316D649598D23520B5822547D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_8A0D3CFC76E9614F0DA504BDF017F140"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_50BDF3121F5EB6D4A225AAC1489DAA8F"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -105,11 +105,6 @@
                     "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Access.Database.Engine.2016"
-                    {
-                    "Name" = "8:Microsoft Access Database Engine 2016"
-                    "ProductCode" = "8:Access.Database.Engine.2016"
-                    }
                 }
             }
         }
@@ -120,7 +115,7 @@
         "IsReleaseOnly" = "11:TRUE"
         "OutputFilename" = "8:Release\\ChartGenSetup.msi"
         "PackageFilesAs" = "3:2"
-        "PackageFileSize" = "3:-2147483648"
+        "PackageFileSize" = "3:0"
         "CabType" = "3:1"
         "Compression" = "3:2"
         "SignOutput" = "11:FALSE"
@@ -135,6 +130,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Access.Database.Engine.2016"
+                    {
+                    "Name" = "8:Microsoft Access Database Engine 2016"
+                    "ProductCode" = "8:Access.Database.Engine.2016"
+                    }
+                }
             }
         }
     }
@@ -165,20 +173,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_179B964445820125F3DBE8AD9BD456B5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1D0B044BE1D403C242279B754D4BEC76"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_179B964445820125F3DBE8AD9BD456B5"
+                    "_1D0B044BE1D403C242279B754D4BEC76"
                     {
-                    "Name" = "8:OxyPlot.dll"
+                    "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:OxyPlot.dll"
+            "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_34DB85DB0E074D9FBE947EC856130902"
@@ -196,20 +204,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1D0B044BE1D403C242279B754D4BEC76"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_50BDF3121F5EB6D4A225AAC1489DAA8F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_1D0B044BE1D403C242279B754D4BEC76"
+                    "_50BDF3121F5EB6D4A225AAC1489DAA8F"
                     {
-                    "Name" = "8:System.Net.Http.dll"
+                    "Name" = "8:OxyPlot.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:System.Net.Http.dll"
+            "SourcePath" = "8:OxyPlot.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_34DB85DB0E074D9FBE947EC856130902"
@@ -247,14 +255,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E32A44BEB8811270A11C1E3A4912BA58"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8A0D3CFC76E9614F0DA504BDF017F140"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:OxyPlot.WindowsForms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=245eacd6b5d2d338, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E32A44BEB8811270A11C1E3A4912BA58"
+                    "_8A0D3CFC76E9614F0DA504BDF017F140"
                     {
                     "Name" = "8:OxyPlot.WindowsForms.dll"
                     "Attributes" = "3:512"
@@ -345,15 +353,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ChartGen"
-        "ProductCode" = "8:{6BDCB14A-4BBA-45F6-9E1B-BFDF32CD695D}"
-        "PackageCode" = "8:{0E4CE3BD-3DFC-4F4B-ACB5-29EEFC7498D7}"
+        "ProductCode" = "8:{CF41F4B5-61B6-4CBC-8A99-F2CEB095D90E}"
+        "PackageCode" = "8:{23E5462A-9159-4A49-A0CF-FC49CA50E48A}"
         "UpgradeCode" = "8:{267F7A03-DA6D-48F8-92DE-DAE07B9AC91A}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:oktaykcr"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/oktaykcr"
@@ -466,7 +474,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_07438A7A5B0D41D2888C34317C848107"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_065E2C7E3A024958A501A6E7AC246E86"
             {
             "Name" = "8:ChartGen"
             "Arguments" = "8:"
@@ -474,13 +482,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-            "Folder" = "8:_3601144920534A75BEDB8BFA0C24764E"
+            "Target" = "8:_00BAF1F316D649598D23520B5822547D"
+            "Folder" = "8:_C12545C53C3548AE8E6167AEBB040FE4"
             "WorkingFolder" = "8:_34DB85DB0E074D9FBE947EC856130902"
             "Icon" = "8:_88AAA865748D4CC0A9D109B167F0966F"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9772B571721741DD948D52F267E36EE8"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C2EDC9A9B8594E058019E2DC703D4A55"
             {
             "Name" = "8:ChartGen"
             "Arguments" = "8:"
@@ -488,8 +496,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3E0B0F894A734ADE934FB40FD93F4F84"
-            "Folder" = "8:_C12545C53C3548AE8E6167AEBB040FE4"
+            "Target" = "8:_00BAF1F316D649598D23520B5822547D"
+            "Folder" = "8:_3601144920534A75BEDB8BFA0C24764E"
             "WorkingFolder" = "8:_34DB85DB0E074D9FBE947EC856130902"
             "Icon" = "8:_88AAA865748D4CC0A9D109B167F0966F"
             "Feature" = "8:"
@@ -893,9 +901,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3E0B0F894A734ADE934FB40FD93F4F84"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_00BAF1F316D649598D23520B5822547D"
             {
-            "SourcePath" = "8:..\\ChartGen\\obj\\Debug\\ChartGen.exe"
+            "SourcePath" = "8:..\\ChartGen\\obj\\Release\\ChartGen.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_34DB85DB0E074D9FBE947EC856130902"

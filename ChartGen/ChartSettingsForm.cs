@@ -73,6 +73,7 @@ namespace ChartGen
                 model.Title = _plotModel.Title;
                 model.Subtitle = _plotModel.Subtitle;
                 model.DefaultFontSize = _plotModel.DefaultFontSize;
+                model.LegendTextColor = _plotModel.LegendTextColor;
 
                 // Set if the Axes Exists
                 if (_plotModel.Axes != null)
@@ -94,6 +95,8 @@ namespace ChartGen
                         series.ItemsSource = ((LineSeries)_plotModel.Series[i]).ItemsSource;
                         series.Title = _plotModel.Series[i].Title;
                         series.Color = ((LineSeries)_plotModel.Series[i]).Color;
+                        series.LineStyle = ((LineSeries)_plotModel.Series[i]).LineStyle;
+                        series.StrokeThickness = ((LineSeries)_plotModel.Series[i]).StrokeThickness;
 
                         model.Series.Add(series);
                     }
@@ -120,7 +123,8 @@ namespace ChartGen
                 return OxyColor.FromRgb(MyDialog.Color.R, MyDialog.Color.G, MyDialog.Color.B);
             }
 
-            return OxyColors.Undefined;
+            Color buttonColor = ((Button)sender).BackColor;
+            return OxyColor.FromRgb(buttonColor.R, buttonColor.G, buttonColor.B);
         }
 
         #region PlotModel Properties
@@ -276,9 +280,8 @@ namespace ChartGen
             series.Title = textBoxSeriesName.Text;
             series.Color = _selectedSeriesColor;
             series.StrokeThickness = (double)numericUpDownSeriesThickness.Value;
-            //series.LineStyle = LineStyle.Dash;
 
-            _plotModel.LegendTextColor = _selectedSeriesColor;
+            _plotModel.LegendTextColor = series.Color;
 
             checkedListBoxSeries.Items.Add(series, true);
 
@@ -300,6 +303,13 @@ namespace ChartGen
         private void buttonSeriesColor_Click(object sender, EventArgs e)
         {
             _selectedSeriesColor = ShowColorDialog(buttonSeriesColor);
+
+            LineSeries selected = (LineSeries)checkedListBoxSeries.SelectedItem;
+            if(selected != null)
+            {
+                selected.Color = _selectedSeriesColor;
+                _plotModel.InvalidatePlot(false);
+            }
         }
 
         private void checkedListBoxSeries_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -403,7 +413,7 @@ namespace ChartGen
 
         private void buttonMenuItemAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("https://github.com/oktaykcr/ChartGen \nVersion: 1.0.0", "About", MessageBoxButtons.OK);
+            MessageBox.Show("https://github.com/oktaykcr/ChartGen \nVersion: 1.0.1", "About", MessageBoxButtons.OK);
         }
         #endregion
     }
